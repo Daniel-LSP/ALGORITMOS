@@ -35,5 +35,4 @@ print(type(x))
 
 print(x , nombre)
 
-my_bool: "8" = "9"
-print(my_bool)
+
