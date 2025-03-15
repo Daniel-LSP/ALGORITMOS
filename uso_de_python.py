@@ -22,7 +22,7 @@ y=15
 print(x+y)  
 print(type(x))
 # <class 'int'> : significa que x es un numero entero
-
+#--
 nombre="Andres"
 print(nombre)
 print(type(nombre))
