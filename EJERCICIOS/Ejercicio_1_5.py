@@ -13,5 +13,12 @@ print(10//2)
 print(float(10/2))
 print(int(10/2))
 
-valor_1=input("Ingrese el primer numero")
-valor_2=input("Ingrese el segundo numero")
+dividendo=int(input("Ingrese el primer numero"))
+divisor=int(input("Ingrese el segundo numero"))
+
+#calculos
+cociente=dividendo/divisor
+residuo=dividendo%divisor
+
+print(f"La comprobacion de la division es: {divisor} por {cociente} mas {residuo} es igual a {dividendo}")
+
