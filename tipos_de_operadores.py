@@ -113,11 +113,13 @@ print(x==100 or y==4)
 En el caso del operador not es valida si una variable es false o true 
 si la variable existe en memoria tenemos un valor por defecto true
 '''
-print(not x)
+# print(not x)
 
-enunciado=False
-print(not enunciado)
+# enunciado=False
+# print(not enunciado)
 
-usuario_logueado=True 
-boton_logout=True
-print(not usuario_logueado)
+# usuario_logueado=True 
+# boton_logout=True
+# print(not usuario_logueado)
+
+
