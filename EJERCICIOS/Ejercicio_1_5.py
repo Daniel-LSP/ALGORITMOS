@@ -12,3 +12,6 @@ print(10/2)
 print(10//2)
 print(float(10/2))
 print(int(10/2))
+
+valor_1=input("Ingrese el primer numero")
+valor_2=input("Ingrese el segundo numero")
