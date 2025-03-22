@@ -96,7 +96,7 @@ comprobación con los valores resultantes de dividir
 dos números entregados por el usuario del 
 programa. 
 '''
-# #Capturar los valores
+#Capturar los valores
 # a = int(input("Introduce el dividendo (a): "))
 # b = int(input("Introduce el divisor (b): "))
 
@@ -109,7 +109,7 @@ programa.
 #     #Verificar la fórmula
 #     comprobacion = (b * cociente) + residuo
 
-#  #Mostrar resultados
+# #Mostrar resultados
 #     print(f"Dividendo: {a}, Divisor: {b}")
 #     print(f"Cociente: {cociente}, Residuo: {residuo}")
 #     print(f"Comprobación: {b} * {cociente} + {residuo} = {comprobacion}")

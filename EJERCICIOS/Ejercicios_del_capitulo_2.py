@@ -115,6 +115,7 @@ letras = ["a", "b", "a", "c", "d", "e"]
 
 # Eliminar la letra 'c' de la posición 3
 letra_eliminada = letras.pop(3)
+letras.append('c')
 
 # Mostrar la letra eliminada y la lista actualizada
 print(f"Letra eliminada: {letra_eliminada}")
@@ -134,16 +135,16 @@ encuentra?.
 #sort() modifica directamente la lista original.
 #sorted() crea una nueva lista con los valores ordenados, dejando la original
 # Crear la lista con números en orden aleatorio
-valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
+# valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
 
-# Ordenar la lista de mayor a menor
-valores.sort(reverse=True)
-print(f"Lista ordenada de mayor a menor: {valores}")
+# # Ordenar la lista de mayor a menor
+# valores.sort(reverse=True)
+# print(f"Lista ordenada de mayor a menor: {valores}")
 
-# Utilizar la función sorted para comparar
-valores_sorted = sorted(valores)
-print(f"Lista ordenada con sorted: {valores_sorted}")
-# Ejercicio 2.9 
+# # Utilizar la función sorted para comparar
+# valores_sorted = sorted(valores)
+# print(f"Lista ordenada con sorted: {valores_sorted}")
+# # Ejercicio 2.9 
 '''
 Considere la creación de una nueva lista 
 llamada duplicada que sea una copia de la 
@@ -151,17 +152,17 @@ lista valores. Posteriormente ejecute una
 instrucción para que la copia quede 
 ordenada desde los valores más bajos a los 
 más altos.
-'''
-# Crear la lista original
-valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
+# '''
+# # Crear la lista original
+# valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
 
-# Crear una copia de la lista
-duplicada = valores.copy()
+# # Crear una copia de la lista
+# duplicada = valores.copy()
 
-# Ordenar la copia de menor a mayor
-duplicada.sort()
-print(f"Lista original: {valores}")
-print(f"Lista duplicada y ordenada: {duplicada}")
+# # Ordenar la copia de menor a mayor
+# duplicada.sort()
+# print(f"Lista original: {valores}")
+# print(f"Lista duplicada y ordenada: {duplicada}")
 
 # Ejercicio 2.10 
 '''
@@ -176,18 +177,18 @@ reemplazar el elemento asignándole un
 nuevo valor 8. ¿Qué interpreta del error que 
 sale al ejecutar la instrucción? 
 '''
-# Crear la tupla con nombre de producto y precio
-ventas = ("leche", 5)
+# # Crear la tupla con nombre de producto y precio
+# ventas = ("leche", 5)
 
-# Consultar el índice del precio usando index()
-indice_precio = ventas.index(5)
-print(f"El índice del precio es: {indice_precio}")
+# # Consultar el índice del precio usando index()
+# indice_precio = ventas.index(5)
+# print(f"El índice del precio es: {indice_precio}")
 
-# Intentar modificar el elemento en el índice obtenido
-try:
-    ventas[indice_precio] = 8  # Esto generará un error
-except TypeError as e:
-    print(f"Error: {e}")
+# # Intentar modificar el elemento en el índice obtenido
+# try:
+#     ventas[indice_precio] = 8  # Esto generará un error
+# except TypeError as e:
+#     print(f"Error: {e}")
 '''
 Interpretacion del error:
 El error ocurre porque las tuplas son inmutables,
