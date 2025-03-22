@@ -33,40 +33,41 @@
 # Ademas esta estructura no permite elementos duplicados 
 # como se definen: {, , , , ,}
 
-# '''
-set1={"a", "b", 'c', 'd'}
-print(type(set1))
 
-set2={"e", 'f', "g"}
+# # '''
+# set1={"a", "b", 'c', 'd'}
+# print(type(set1))
 
-#metodos para el tratamiento de conjuntos
-set1.union()
-#union de conjunto
-# print(set1.union(set2))
+# set2={"e", 'f', "g"}
 
-set3={"a", "b", "c", "c", "d", "d"}
-print(set3)
+# #metodos para el tratamiento de conjuntos
+# set1.union()
+# #union de conjunto
+# # print(set1.union(set2))
 
-set4=set3.union(set1)
-print(set4)
+# set3={"a", "b", "c", "c", "d", "d"}
+# print(set3)
 
-# #Interseccion de conjuntos con python
-set5={"f", "w", "a", "b"}
-print(set5.intersection(set1))
+# set4=set3.union(set1)
+# print(set4)
 
-set5.remove("w")
-print(set5)
+# # #Interseccion de conjuntos con python
+# set5={"f", "w", "a", "b"}
+# print(set5.intersection(set1))
 
-set4.add("a")
-print(set4)
+# set5.remove("w")
+# print(set5)
 
-set4.discard("a")
-print(set4)
+# set4.add("a")
+# print(set4)
 
-print(set4.issuperset(set5))
+# set4.discard("a")
+# print(set4)
 
-set6={"andres", 5, True}
-set7={"andres", 5, True, "daniel"}
+# print(set4.issuperset(set5))
+
+# set6={"andres", 5, True}
+# set7={"andres", 5, True, "daniel"}
 # print(set6.issuperset(set7)) #False
 # print(set7.issuperset(set6)) #True
 
