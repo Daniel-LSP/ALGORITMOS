@@ -67,7 +67,8 @@ la cadena de texto y para qué serviría.
 #Este método se utiliza para realizar comparaciones de texto
 #que no distingan entre mayúsculas y minúsculas. Es más potente 
 #que  porque maneja mejor ciertos idiomas y caracteres especiales.
-
+#Proposito: El metodo casefold sirve para comparar cadenas de texto de manera 
+#insensible a las diferencias de casos, util en validaciones o busquedas.
 # Comparar cadenas ignorando mayúsculas y minúsculas
 texto1 = "Python".casefold()
 texto2 = "PYTHON".casefold()
@@ -129,6 +130,9 @@ mayor al menor. Si ahora utiliza la función
 sorted sobre la lista, ¿qué diferencia 
 encuentra?. 
 '''
+#Diferencia:
+#sort() modifica directamente la lista original.
+#sorted() crea una nueva lista con los valores ordenados, dejando la original
 # Crear la lista con números en orden aleatorio
 valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
 
@@ -184,3 +188,10 @@ try:
     ventas[indice_precio] = 8  # Esto generará un error
 except TypeError as e:
     print(f"Error: {e}")
+'''
+Interpretacion del error:
+El error ocurre porque las tuplas son inmutables,
+lo que significa que no se pueden modificar despues 
+de ser creadas. Eso es diferente a una lista, que si permite 
+cambios en sus elementos.
+'''
