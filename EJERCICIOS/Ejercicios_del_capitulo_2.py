@@ -63,6 +63,11 @@ print(f"¿La cadena termina con la letra 'o'? {termina_con_o}")
 Investigue cómo utilizar el método casefold sobre 
 la cadena de texto y para qué serviría. 
 '''
+#METODO CASEFOLD
+#Este método se utiliza para realizar comparaciones de texto
+#que no distingan entre mayúsculas y minúsculas. Es más potente 
+#que  porque maneja mejor ciertos idiomas y caracteres especiales.
+
 # Comparar cadenas ignorando mayúsculas y minúsculas
 texto1 = "Python".casefold()
 texto2 = "PYTHON".casefold()
