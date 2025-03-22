@@ -70,14 +70,14 @@ la cadena de texto y para qué serviría.
 #Proposito: El metodo casefold sirve para comparar cadenas de texto de manera 
 #insensible a las diferencias de casos, util en validaciones o busquedas.
 # Comparar cadenas ignorando mayúsculas y minúsculas
-texto1 = "Python".casefold()
-texto2 = "PYTHON".casefold()
+# texto1 = "Python".casefold()
+# texto2 = "PYTHON".casefold()
 
-# Verificar si son iguales
-son_iguales = texto1 == texto2
+# # Verificar si son iguales
+# son_iguales = texto1 == texto2
 
-# Mostrar el resultado
-print(f"¿Son iguales? {son_iguales}")
+# # Mostrar el resultado
+# print(f"¿Son iguales? {son_iguales}")
 
 # Ejercicio 2.6 
 '''
@@ -89,17 +89,17 @@ aplique un método para contar el número de veces
 que la letra a se encuentra en la lista creada. 
 '''
 # Crear la lista con las primeras cinco letras del alfabeto
-letras = ["a", "b", "c", "d", "e"]
+# letras = ["a", "b", "c", "d", "e"]
 
-# Insertar la letra 'a' en la posición 2
-letras.insert(2, "a")
+# # Insertar la letra 'a' en la posición 2
+# letras.insert(2, "a")
 
-# Contar el número de veces que aparece la letra 'a'
-conteo_a = letras.count("a")
+# # Contar el número de veces que aparece la letra 'a'
+# conteo_a = letras.count("a")
 
-# Mostrar la lista y el conteo
-print(f"Lista: {letras}")
-print(f"Número de veces que aparece la letra 'a': {conteo_a}")
+# # Mostrar la lista y el conteo
+# print(f"Lista: {letras}")
+# print(f"Número de veces que aparece la letra 'a': {conteo_a}")
 
 # Ejercicio 2.7 
 '''
@@ -111,15 +111,15 @@ al llamar nuevamente la lista el elemento no se
 encuentre en la posición indicada. 
 '''
 # Utilizar la lista creada en el ejercicio anterior
-letras = ["a", "b", "a", "c", "d", "e"]
+# letras = ["a", "b", "a", "c", "d", "e"]
 
-# Eliminar la letra 'c' de la posición 3
-letra_eliminada = letras.pop(3)
-letras.append('c')
+# # Eliminar la letra 'c' de la posición 3
+# letra_eliminada = letras.pop(3)
+# letras.append('c')
 
-# Mostrar la letra eliminada y la lista actualizada
-print(f"Letra eliminada: {letra_eliminada}")
-print(f"Lista actualizada: {letras}")
+# # Mostrar la letra eliminada y la lista actualizada
+# print(f"Letra eliminada: {letra_eliminada}")
+# print(f"Lista actualizada: {letras}")
 
 # Ejercicio 2.8 
 '''
@@ -144,7 +144,7 @@ encuentra?.
 # # Utilizar la función sorted para comparar
 # valores_sorted = sorted(valores)
 # print(f"Lista ordenada con sorted: {valores_sorted}")
-# # Ejercicio 2.9 
+# Ejercicio 2.9 
 '''
 Considere la creación de una nueva lista 
 llamada duplicada que sea una copia de la 
@@ -154,15 +154,15 @@ ordenada desde los valores más bajos a los
 más altos.
 # '''
 # # Crear la lista original
-# valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
+valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
 
 # # Crear una copia de la lista
-# duplicada = valores.copy()
+duplicada = valores.copy()
 
 # # Ordenar la copia de menor a mayor
-# duplicada.sort()
-# print(f"Lista original: {valores}")
-# print(f"Lista duplicada y ordenada: {duplicada}")
+duplicada.sort()
+print(f"Lista original: {valores}")
+print(f"Lista duplicada y ordenada: {duplicada}")
 
 # Ejercicio 2.10 
 '''
