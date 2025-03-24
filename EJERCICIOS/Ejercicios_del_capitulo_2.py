@@ -49,14 +49,14 @@ método capitalize.
 Aplique un método para verificar si la letra o es la 
 que finaliza la cadena de caracteres. 
 '''
-# Definir la cadena
-cadena = "Python puro"
+# # Definir la cadena
+# cadena = "Python puro"
 
-# Verificar si la letra 'o' es la última usando el método endswith
-termina_con_o = cadena.endswith("o")
+# # Verificar si la letra 'o' es la última usando el método endswith
+# termina_con_o = cadena.endswith("o")
 
-# Mostrar el resultado
-print(f"¿La cadena termina con la letra 'o'? {termina_con_o}")
+# # Mostrar el resultado
+# print(f"¿La cadena termina con la letra 'o'? {termina_con_o}")
 
 # Ejercicio 2.5 
 '''
@@ -153,16 +153,16 @@ instrucción para que la copia quede
 ordenada desde los valores más bajos a los 
 más altos.
 # '''
-# # Crear la lista original
-valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
+# # # Crear la lista original
+# valores = [3, 1, 4, 10, 7, 5, 2, 8, 9, 6]
 
-# # Crear una copia de la lista
-duplicada = valores.copy()
+# # # Crear una copia de la lista
+# duplicada = valores.copy()
 
-# # Ordenar la copia de menor a mayor
-duplicada.sort()
-print(f"Lista original: {valores}")
-print(f"Lista duplicada y ordenada: {duplicada}")
+# # # Ordenar la copia de menor a mayor
+# duplicada.sort()
+# print(f"Lista original: {valores}")
+# print(f"Lista duplicada y ordenada: {duplicada}")
 
 # Ejercicio 2.10 
 '''
@@ -195,4 +195,165 @@ El error ocurre porque las tuplas son inmutables,
 lo que significa que no se pueden modificar despues 
 de ser creadas. Eso es diferente a una lista, que si permite 
 cambios en sus elementos.
+'''
+
+#Ejercicio 2.11
+'''
+Con la tupla definida en el ejercicio anterior 
+aplique el metodo count para consultar cuantas veces
+aparece la letra "e" dentro de la tupla, de esta manera:
+>>> ventas.count("e")
+Interprete el resultado
+Posteriormente indexe la tupla y consulte cuantas veces
+aparece la letra "e" dentro del primer elemento de la tupla.
+>>> ventas[0].count("e")
+¿Que diferencias encuentra en los dos resultados?
+'''
+# ventas = ("leche", 5)
+# resultado = ventas.count("e")
+# resultado_elemento = ventas[0].count("e")
+# print(resultado)
+# print(resultado_elemento)
+
+'''
+Interpretación del 1 resultado: El método  aplicado sobre 
+la tupla busca exactamente el objeto  dentro de los elementos
+completos de la tupla. En este caso,  como elemento individual
+no está presente en la tupla, por lo que el resultado es .
+'''
+'''
+Interpretacion del 2 resultado: Aquí estás utilizando el método  
+sobre una cadena (el primer elemento de la tupla, ). Este método 
+busca y cuenta cuántas veces aparece la letra  en esa cadena específica.
+En este caso,  tiene 2 apariciones de la letra , por lo que el resultado
+es 2.
+'''
+'''
+Diferencias:
+En el primer caso (), se busca la presencia del objeto  como elemento 
+independiente dentro de la tupla.
+En el segundo caso (), se busca dentro de un elemento específico de
+la tupla (una cadena) cuántas veces aparece.
+'''
+# Ejercicio 2.12 
+'''
+Defina un conjunto vacío denominado figuras. A 
+continuación, utilice un método para que el 
+conjunto contenga los nombres de tres figuras 
+geométricas, por ejemplo: circulo, cuadrado, 
+rectángulo. Aplique un método que permita 
+agregar un nuevo elemento utilizando 
+exactamente uno de los nombres ya definidos. 
+Consulte el estado actual del conjunto figuras, 
+¿qué interpreta del resultado?
+'''
+# figuras = set()
+# figuras.add("circulo")
+# figuras.add("cuadrado")
+# figuras.add("rectangulo")
+# print(figuras)  # Resultado: {'circulo', 'cuadrado', 'rectangulo'}
+# figuras.add("circulo")
+# print(figuras)  # Resultado: {'circulo', 'cuadrado', 'rectangulo'}
+
+'''
+Interpretacion del resultado
+El conjunto  mantiene la propiedad de no permitir
+elementos duplicados, lo que significa que aunque 
+se intente agregar  (que ya existe en el conjunto),
+no se genera un cambio en su contenido. Los conjuntos 
+en Python son estructuras que automáticamente evitan la
+duplicidad de sus elementos.
+'''
+# Ejercicio 2.13
+''' 
+Emplee el conjunto figuras definido en el 
+ejercicio 
+anterior. 
+instrucción: 
+>>> figuras[0] 
+Emplee la siguiente 
+¿Qué interpreta del resultado? 
+'''
+# figuras[0] #TypeError: 'set' object is not subscriptable
+'''
+Intentar acceder al conjunto  mediante un índice, como en figuras[0], 
+generará un error en Python. Esto sucede porque los conjuntos ()
+en Python no están indexados. A diferencia de las listas o tuplas,
+los conjuntos no tienen un orden específico para sus elementos, 
+ya que su propósito principal es almacenar elementos únicos y no 
+necesariamente ordenados.
+'''
+# figuras_lista = list(figuras)
+# print(figuras_lista[0])  # Acceder al primer elemento del conjunto como lista
+'''
+Esto te permitirá acceder a los elementos, aunque el orden en 
+el que se convierten los elementos del conjunto en la lista será 
+aleatorio (ya que los conjuntos no conservan un orden).
+'''
+
+# Ejercicio 2.14 
+'''
+Utilice el conjunto figuras definido 
+anteriormente. Aplique el método unión 
+agregando dentro del argumento otro conjunto 
+que incluya más figuras geométricas. Consulte de 
+nuevo el conjunto figuras. ¿que interpreta del resultado?
+'''
+# figuras = {"circulo", "cuadrado", "rectangulo"}
+# nuevas_figuras = {"triangulo", "pentagono", "hexagono"}
+# conjunto_union = figuras.union(nuevas_figuras)
+# print(conjunto_union)  # Resultado: {'circulo', 'cuadrado', 'rectangulo', 'triangulo', 'pentagono', 'hexagono'}
+
+'''El método union no modifica el conjunto original figuras.
+En su lugar, devuelve un nuevo conjunto que contiene los elementos 
+de ambos conjuntos (figuras y nuevas_figuras).'''
+'''El conjunto resultante incluye todos los elementos de ambos conjuntos, 
+pero sin duplicados. Por ejemplo, si una figura geométrica estuviera en 
+ambos conjuntos, aparecería solo una vez en el conjunto final, gracias a 
+la propiedad de unicidad de los conjuntos.'''
+
+# print(figuras)  # Resultado: {'circulo', 'cuadrado', 'rectangulo'}
+
+# Ejercicio 2.15 
+'''
+Cree un conjunto llamado personas con nombres de personas que 
+conozca. Aplique el método update de la siguiente manera: 
+>>> personas.update( { “pedro”, “ramiro ”} ) 
+Posteriormente aplique el método pop. ¿Cómo describiría el uso 
+de este método y qué argumentos necesita para operar? 
+'''
+# personas = {"ana", "luis", "maria"}  # Por ejemplo, nombres conocidos
+# personas.update({"pedro", "ramiro"})
+# print(personas)  
+# Resultado: {'ana', 'luis', 'maria', 'pedro', 'ramiro'}
+'''
+El método update agrega todos los elementos del conjunto 
+proporcionado ({"pedro", "ramiro"}) al conjunto personas. Si algún elemento ya existía,
+no se duplicará debido a la naturaleza de los conjuntos 
+(que no permiten duplicados).
+'''
+# elemento_removido = personas.pop()
+# print(elemento_removido)  
+# print(personas)  
+# Resultado: un elemento eliminado, y el conjunto actualizado
+'''
+El método  elimina y devuelve un elemento arbitrario del conjunto. 
+Esto se debe a que los conjuntos no están ordenados.
+Argumentos necesarios:  no toma argumentos.
+Si el conjunto está vacío, genera un keyError.
+'''
+# Ejercicio 2.16
+''' 
+Utilice personas el conjunto de los definido ejercicios anteriores. 
+Cree ahora un nuevo conjunto llamado estudiantes definido de la siguiente manera: 
+>>> estudiantes = {‘ luciana‘, ‘ramiro ‘} 
+Aplique el método que permite establecer los elementos diferentes 
+entre los dos conjuntos tomando como base el conjunto personas, 
+¿Qué logra identificar de los resultados?, ¿para qué serviría el método?  
+'''
+# Ejercicio 2.17 
+'''
+Ejecute la última instrucción del ejercicio anterior pero ahora 
+tomando como base el conjunto estudiantes. 
+¿Qué diferencia encuentra entre los dos resultados? 
 '''
