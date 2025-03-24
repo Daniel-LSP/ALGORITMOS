@@ -387,6 +387,17 @@ estudiantes están igualmente definidos en el
 conjunto personas. Aplique un método para 
 conocer la respuesta. 
 '''
+estudiantes = {"luciana", "ramiro"}
+personas = {"ana", "luis", "maria", "pedro", "ramiro", "luciana"}
+
+es_subconjunto = estudiantes.issubset(personas)
+print(es_subconjunto)  # Resultado: True
+
+'''
+Interpretación: El método issubet verifica si todos los elementos del 
+conjunto estudiantes están contenidos dentro del conjunto personas. En este caso, 
+devuelve true , ya que ambos elementos de estudiantes están en personas.
+'''
 # Ejercicio 2.19 
 '''
 Actualmente los conjuntos no tienen un método 
@@ -395,6 +406,14 @@ que lo componen. Esto se debe a que en un conjunto
 el orden no interesa, sin embargo, es posible aplicar 
 la función sorted. Ejecute una instrucción que utilice 
 esta función e interprete el resultado. 
+'''
+conjunto_ordenado = sorted(personas)
+print(conjunto_ordenado)  # Resultado: Lista ordenada de los elementos
+'''
+Interpretación: La función sorted convierte el conjunto en una lista 
+ordenada de sus elementos. Esto es útil si se necesita un orden 
+específico para presentar o procesar los datos, ya que los conjuntos,
+por naturaleza, no mantienen un orden.
 '''
 # Ejercicio 2.20 
 '''
@@ -422,13 +441,37 @@ vez creado compruebe el tipo de objeto que queda
 almacenado en la variable calificaciones. Utilice 
 para esto la función type.
 ''' 
+calificaciones = {
+    "Liliana": 4.5,
+    "Carmen": 3.3,
+    "Josefina": 4.1,
+    "Daniela": 4.9,
+    "Pedro": 2.9,
+    "José": 4.6,
+    "Mario": 3.3
+}
+print(type(calificaciones))  # Resultado: <class 'dict'>
+'''
+Interpretación: El tipo de objeto que se almacena en calificaciones es un dict  
+(diccionario en Python), que permite asociar claves únicas 
+(nombres) con valores (notas).
+'''
 # Ejercicio 2.21 
 '''
 Aplique la función sorted sobre el 
 diccionario calificaciones. Discuta la 
 necesidad de usar esta función en el 
 diccionario analizado. 
+'''
+claves_ordenadas = sorted(calificaciones)
+print(claves_ordenadas)  # Resultado: Lista de las claves ordenadas alfabéticamente
+'''
+Interpretación: La función sorted devuelve una lista de las claves del 
+diccionario, ordenadas alfabéticamente. Es útil si necesitas procesar 
+o mostrar los datos en un orden específico
+'''
 # Ejercicio 2.22 
+'''
 Parece ser que el método pop 
 permite eliminar un elemento de un 
 diccionario. Ejecute la siguiente 
@@ -444,6 +487,14 @@ no arguments (1 given)
 ¿Cuándo es conveniente aplicar este 
 método? 
 '''
+calificaciones.popitem({"Daniela": 4.9}) #TypeError: popitem() takes no arguments (1 given)
+'''
+Interpretación: El método  no toma argumentos. Solo elimina 
+y devuelve el último par clave-valor del diccionario,
+respetando el orden de inserción (a partir de Python 3.7).
+Uso apropiado: Este método es útil si deseas eliminar 
+el último elemento agregado al diccionario.
+'''
 # Ejercicio 2.23 
 '''
 Utilice el método ítems sobre el 
@@ -453,7 +504,9 @@ datos parece, una lista?, una lista de
 listas?, ¿una lista de tuplas?. 
 Investigue para más información 
 sobre los objetos de tipo dict_items. 
-Ejercicio 2.24 
+'''
+# Ejercicio 2.24 
+'''
 Sobre el diccionario calificaciones 
 aplique el método update verificando 
 los argumentos necesarios para el 
