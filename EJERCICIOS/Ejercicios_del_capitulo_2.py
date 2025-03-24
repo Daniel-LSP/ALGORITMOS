@@ -351,9 +351,113 @@ Aplique el método que permite establecer los elementos diferentes
 entre los dos conjuntos tomando como base el conjunto personas, 
 ¿Qué logra identificar de los resultados?, ¿para qué serviría el método?  
 '''
+# estudiantes = {"luciana", "ramiro"}
+# diferentes = personas.difference(estudiantes)
+# print(diferentes)  
+# Resultado: Elementos presentes en `personas` pero no en `estudiantes`
+'''
+El método difference devuelve un conjunto que contiene los elementos de personas 
+que no están en estudiantes.
+Este método sirve para identificar elementos únicos de un conjunto en comparación 
+con otro, lo cual es útil en análisis de datos o para distinguir categorías.
+'''
 # Ejercicio 2.17 
 '''
 Ejecute la última instrucción del ejercicio anterior pero ahora 
 tomando como base el conjunto estudiantes. 
 ¿Qué diferencia encuentra entre los dos resultados? 
+'''
+# diferentes_estudiantes = estudiantes.difference(personas)
+# print(diferentes_estudiantes)
+# Resultado: Elementos presentes en `estudiantes` pero no en `personas`
+'''
+Cuando se usa personas.difference(estudiantes), se identifican elementos 
+en personas que no están en estudiantes.
+Con estudiantes.difference(personas), se identifican los elementos en 
+estudiantes que no están en personas. 
+Los resultados dependen del conjunto base que uses para la operación difference.
+'''
+
+# Ejercicio 2.18
+'''
+Se desea conocer si el conjunto estudiantes es un 
+subconjunto de las personas. Subconjunto significa 
+que todos los elementos que son parte de 
+estudiantes están igualmente definidos en el 
+conjunto personas. Aplique un método para 
+conocer la respuesta. 
+'''
+# Ejercicio 2.19 
+'''
+Actualmente los conjuntos no tienen un método 
+built-in en Python 3.8 para ordenar los elementos 
+que lo componen. Esto se debe a que en un conjunto 
+el orden no interesa, sin embargo, es posible aplicar 
+la función sorted. Ejecute una instrucción que utilice 
+esta función e interprete el resultado. 
+'''
+# Ejercicio 2.20 
+'''
+Para la construcción de una aplicación de notas 
+escolares es necesario crear una base de datos con 
+los nombres de los estudiantes y la nota obtenida en 
+un curso. Para almacenar los datos se le ha pedido 
+que cree un diccionario donde las claves sean los 
+nombres de los estudiantes y los valores sean las 
+notas obtenidas. Tenga en cuenta los datos 
+presentados en la siguiente tabla: 
+Nombre de 
+estudiante Nota asignada 
+Liliana        4.5 
+Carmen         3.3 
+Josefina       4.1 
+Daniela        4.9 
+Pedro          2.9 
+José           4.6 
+Mario          3.3 
+Tabla resumen de datos 
+Para efectos de desarrollar los siguientes ejercicios 
+se definirá el diccionario como calificaciones. Una 
+vez creado compruebe el tipo de objeto que queda 
+almacenado en la variable calificaciones. Utilice 
+para esto la función type.
+''' 
+# Ejercicio 2.21 
+'''
+Aplique la función sorted sobre el 
+diccionario calificaciones. Discuta la 
+necesidad de usar esta función en el 
+diccionario analizado. 
+# Ejercicio 2.22 
+Parece ser que el método pop 
+permite eliminar un elemento de un 
+diccionario. Ejecute la siguiente 
+instrucción: 
+>>> 
+calificaciones.popitem({'Daniela': 
+4.9}) 
+¿Qué interpretación se le puede dar 
+al mensaje de error que nos entrega 
+el intérprete cuando ejecutamos?: 
+TypeError: popitem() takes 
+no arguments (1 given) 
+¿Cuándo es conveniente aplicar este 
+método? 
+'''
+# Ejercicio 2.23 
+'''
+Utilice el método ítems sobre el 
+diccionario. ¿qué retorna este 
+método?, ¿qué tipo de estructura de 
+datos parece, una lista?, una lista de 
+listas?, ¿una lista de tuplas?. 
+Investigue para más información 
+sobre los objetos de tipo dict_items. 
+Ejercicio 2.24 
+Sobre el diccionario calificaciones 
+aplique el método update verificando 
+los argumentos necesarios para el 
+correcto funcionamiento si se quiere 
+modificar la nota asignada a la estudiante
+Liliana a un valor de 4.7.
 '''
