@@ -487,7 +487,7 @@ no arguments (1 given)
 ¿Cuándo es conveniente aplicar este 
 método? 
 '''
-calificaciones.popitem({"Daniela": 4.9}) #TypeError: popitem() takes no arguments (1 given)
+# calificaciones.popitem({"Daniela": 4.9}) #TypeError: popitem() takes no arguments (1 given)
 '''
 Interpretación: El método  no toma argumentos. Solo elimina 
 y devuelve el último par clave-valor del diccionario,
@@ -505,6 +505,16 @@ listas?, ¿una lista de tuplas?.
 Investigue para más información 
 sobre los objetos de tipo dict_items. 
 '''
+items = calificaciones.items()
+print(items)  # Resultado: dict_items([('Liliana', 4.5), ('Carmen', 3.3), ...])
+'''
+Interpretacion: 
+Este objeto parece ser una lista de tuplas, donde cada tupla representa 
+un par clave-valor del diccionario.
+El método  devuelve un objeto de tipo , que es una vista del diccionario.
+Adicional
+Los objetos dict_items son iterables y eficientes para recorrer las claves y valores del diccionario.
+'''
 # Ejercicio 2.24 
 '''
 Sobre el diccionario calificaciones 
@@ -513,4 +523,12 @@ los argumentos necesarios para el
 correcto funcionamiento si se quiere 
 modificar la nota asignada a la estudiante
 Liliana a un valor de 4.7.
+'''
+calificaciones.update({"Liliana": 4.7})
+print(calificaciones)
+# Resultado: {'Liliana': 4.7, 'Carmen': 3.3, ...}
+'''
+El método update toma un diccionario como argumento.
+En este caso, se proporciona un diccionario con la clave "Liliana" y el nuevo valor 4.7. 
+Esto modifica directamente la nota de Liliana
 '''
