@@ -111,19 +111,68 @@ si permiten valores duplicados
 pueden contener cualquier tipo de dato,
 numero, letras, o incluso otras listas
 '''
-lista1=[8, 9, 7, 5, 4, 10]
-print(type(lista1))
+# lista1=[8, 9, 7, 5, 4, 10]
+# print(type(lista1))
 
-lista2=[["jhon", "alejandro", "lewin",], ["Isabel", "Juan", "Daniel"]]
-print(type(lista2)) #<class 'list'>
+# lista2=[["jhon", "alejandro", "lewin",], ["Isabel", "Juan", "Daniel"]]
+# print(type(lista2)) #<class 'list'>
 
-#metodos
-lista2.reverse()
-print(lista2)
+# #metodos
+# lista2.reverse()
+# print(lista2)
 
-lista1.append("andres")
-print(lista1)
+# lista1.append("andres")
+# print(lista1)
 
-#acceder a los elementos de la lista
-lista2=[["jhon", "alejandro", "lewin",], ["Isabel", "Juan", "Daniel"]]
-print(lista2[0][2],["jhon"])
+# #acceder a los elementos de la lista
+# lista2=[["jhon", "alejandro", "lewin",], ["Isabel", "Juan", "Daniel"]]
+# print(lista2[0][2],["jhon"])
+
+print("----- clase 26 de mazo -----")
+
+'''
+diccionarios
+<class 'dict'>
+
+{ 'clave':'valor', 'clave2':'valor2' ,,,,, }
+
+{
+    'clave':'valor'
+    'clave2':'valor2'
+}
+'''
+
+estudiantes={
+    'diana':25,
+    'juan':20,
+    'ana':29,
+}
+
+print(type(estudiantes))
+
+print(estudiantes.keys())
+
+print(estudiantes.values())
+
+#diccionarios pueden involucren otras estructuras
+instituto={
+    'robotica':["diana", "juan", "pedro"],
+    'robotica': ["andres", "luis", "miguel"]
+}
+
+print(instituto.values())
+
+colegio={
+    'quimica':{"luisa":15, "jose":14},
+    'fisica':{"lina":14, "mario":17}
+}
+
+print(colegio.values())
+
+distancias={
+    ('palmira', 'cali'):22,
+    ('palmira', 'pradera'):15
+}
+
+estudiantes.update({'diana':60})
+print(estudiantes)

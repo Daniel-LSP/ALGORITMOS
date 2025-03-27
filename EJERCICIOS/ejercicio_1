@@ -1,0 +1,119 @@
+# Ejercicio 1:
+'''
+ Operadores Aritméticos
+
+Problema: Escribe un programa que solicite al usuario dos números y 
+realice las operaciones de suma, resta, multiplicación, división y módulo.
+
+'''
+
+# x = int(input("Introduce un valor para x: "))#Definir x
+# y = int(input("Introduce un valor para y: "))  #Capturar y
+# z = x + y  #Calcular la suma y guardarla en z
+# v = x - y
+# s = x * y
+# d = x / y
+# b = x % y
+
+# print("El resultado de la suma es:", z)  #Mostrar el resultado
+# print("El resultado de la resta es:", v)
+# print("El resultado de la multiplicacion es:", s)
+# print("El resultado de la division es:", d)
+# print("El resultado del modulo es:", b)
+
+#ejercicio2
+
+'''
+Problema: Escribe un programa que verifique si una palabra ingresada por el usuario está 
+en la siguiente frase:
+"Python es un lenguaje de programación poderoso".
+'''
+# x=str(input("Introduce una palabra: "))
+# texto="Python es un lenguaje de programación poderoso"
+# y= x in texto
+# print(f" {y}")
+
+#ejercicio 3
+'''
+Problema: Escribe un programa que solicite un número al usuario y lo incremente en 5 unidades y 
+luego lo decremente en 3.
+'''
+# x = int(input("Introduce un valor para x: "))#Definir x
+# x += 5
+# print(f"x incrementa a: {x}")
+# x -= 3
+# print(f"x decrementa a: {x}")
+
+#ejercicio 4
+'''
+Problema: Escribe un programa que determine si un número ingresado por el 
+usuario es par o impar utilizando el operador módulo %.
+'''
+
+# x = int(input("Introduce un valor para x: "))#Definir x
+# if x % 2 == 0:
+#    print(x, "es par.")
+# else: 
+#    print(x, "es impar.")
+
+#ejercicio 5
+'''
+Problema: Escribe un programa que solicite la base y la altura de un rectángulo y calcule su área.
+'''
+# y = int(input("Introduzca la base: "))#Definir y
+# x = int(input("Introduzca la altura: "))#Definir x
+
+# print(f" El area del rectagunlo es: {y * x}")
+
+
+#ejercicio 6
+'''
+Problema: Solicitar al usuario 5 números enteros, almacenarlos en una lista y luego mostrar:
+
+    La lista original.
+
+    La lista en orden inverso.
+
+    La suma de los números.
+'''
+# y = int(input("Introduzca un numero: "))
+# x = int(input("Introduzca un numero: "))
+# z = int(input("Introduzca un numero: "))
+# c = int(input("Introduzca un numero: "))
+# b = int(input("Introduzca un numero: "))
+
+# lista=[y, x, z, c, b]
+# print(lista)
+# lista.reverse()
+# print(lista)
+# print(sum(lista))
+
+#ejercicio 7
+'''
+Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
+
+    La primera y la última ciudad.
+
+    La cantidad de caracteres de cada ciudad.
+'''
+# ciudades= ("paris","cerrito", "palmira", "cali")
+# print(ciudades[0], ciudades[-1])
+
+#ejercicio 8
+'''Problema: Solicitar al usuario dos conjuntos de números y luego mostrar:
+
+    La unión de ambos conjuntos.
+
+    La intersección de ambos conjuntos
+'''
+# y = int(input("Introduzca un numero: "))
+# x = int(input("Introduzca un numero: "))
+# z = int(input("Introduzca un numero: "))
+# c = int(input("Introduzca un numero: "))
+
+# a={y, x}
+# b={z, c}
+# m=a.union(b)
+# print(m)
+# m=a.intersection(b)
+# print(m)
