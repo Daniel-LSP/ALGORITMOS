@@ -117,3 +117,61 @@ Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
 # print(m)
 # m=a.intersection(b)
 # print(m)
+
+#ejercicio 9
+'''
+Problema: Crear un diccionario con las calificaciones de 3 estudiantes 
+y permitir que el usuario consulte la calificación de uno de ellos.
+'''
+# calificaciones = {
+#     "Juan": 85,
+#     "Ana": 92,
+#     "Luis": 78
+# }
+
+# nombre = input("Introduce el nombre del estudiante para consultar su calificación: ")
+# if nombre in calificaciones:
+#     print(f"La calificación de {nombre} es: {calificaciones[nombre]}")
+# else:
+#     print("El estudiante no está en la lista.")
+
+'''
+-creas un diccionario llamado calificaciones con tres estudiantes 
+y su respectivas notas.
+-Le pides al usuario que introduzca el nombre de uno de los studiantes.
+-usas un condicional para verificar si el nombre existe en el diccionario y le
+muestras la calificacion si lo encuentr. Si el nombre no esta,
+se informa al usuario.
+'''
+
+#ejercicio 10
+'''
+Problema: Crear un diccionario con algunos productos 
+y permitir que el usuario agregue un nuevo producto con su precio.
+'''
+# productos = {
+#     "Manzana": 1.2,
+#     "Pan": 0.8,
+#     "Leche": 1.5
+# }
+
+# print("Productos actuales:")
+# for producto, precio in productos.items():
+#     print(f"{producto}: ${precio:.2f}")
+
+# nuevo_producto = input("Introduce el nombre del nuevo producto: ")
+# precio_producto = float(input("Introduce el precio del producto: "))
+
+# productos[nuevo_producto] = precio_producto
+
+# print("\nLista actualizada de productos:")
+# for producto, precio in productos.items():
+#     print(f"{producto}: ${precio:.2f}")
+
+'''
+-se inicializa un diccionario llamado productos con algunos
+elementos y sus precios.
+-se muestra la lista de productos existentes.
+-El usuario puede ingresar el nombre de un nuevo producto y su precio.
+-se agrega el nuevo producto al diccionario y se imprime la lista actualizada.
+'''
