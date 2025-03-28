@@ -88,6 +88,17 @@ Problema: Solicitar al usuario 5 números enteros, almacenarlos en una lista y l
 # print(lista)
 # print(sum(lista))
 
+# #opcion2
+# entrada=input("ingrese los numeros a listar: ")
+# print(entrada)
+# print(int(entrada))
+# lista=list(entrada)
+# print(lista)
+# lista.reverse()
+# print(lista)
+# print(sum(entrada))
+
+
 #ejercicio 7
 '''
 Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
@@ -96,7 +107,7 @@ Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
 
     La cantidad de caracteres de cada ciudad.
 '''
-# ciudades= ("paris","cerrito", "palmira", "cali")
+# ciudades= ("paris","cerrito", "palmira")
 # print(ciudades[0], ciudades[-1])
 
 #ejercicio 8
@@ -106,17 +117,17 @@ Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
 
     La intersección de ambos conjuntos
 '''
-# y = int(input("Introduzca un numero: "))
-# x = int(input("Introduzca un numero: "))
-# z = int(input("Introduzca un numero: "))
-# c = int(input("Introduzca un numero: "))
+y = int(input("Introduzca un numero: "))
+x = int(input("Introduzca un numero: "))
+z = int(input("Introduzca un numero: "))
+c = int(input("Introduzca un numero: "))
 
-# a={y, x}
-# b={z, c}
-# m=a.union(b)
-# print(m)
-# m=a.intersection(b)
-# print(m)
+a={y, x}
+b={z, c}
+m=a.union(b)
+print(m)
+m=a.intersection(b)
+print(m)
 
 #ejercicio 9
 '''
