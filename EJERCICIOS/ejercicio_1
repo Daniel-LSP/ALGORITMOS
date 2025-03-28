@@ -110,6 +110,8 @@ Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
 # ciudades= ("paris","cerrito", "palmira")
 # print(ciudades[0], ciudades[-1])
 
+# print(len(a), len(b), (c))
+
 #ejercicio 8
 '''Problema: Solicitar al usuario dos conjuntos de números y luego mostrar:
 
@@ -128,6 +130,9 @@ m=a.union(b)
 print(m)
 m=a.intersection(b)
 print(m)
+
+# | para union
+# & para intersection
 
 #ejercicio 9
 '''
