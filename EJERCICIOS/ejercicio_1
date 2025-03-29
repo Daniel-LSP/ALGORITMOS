@@ -119,19 +119,20 @@ Problema: Almacenar los nombres de 3 ciudades en una tupla y luego mostrar:
 
     La intersección de ambos conjuntos
 '''
-y = int(input("Introduzca un numero: "))
-x = int(input("Introduzca un numero: "))
-z = int(input("Introduzca un numero: "))
-c = int(input("Introduzca un numero: "))
+# y = int(input("Introduzca un numero: "))
+# x = int(input("Introduzca un numero: "))
+# z = int(input("Introduzca un numero: "))
+# c = int(input("Introduzca un numero: "))
 
-a={y, x}
-b={z, c}
-m=a.union(b)
-print(m)
-m=a.intersection(b)
-print(m)
+# a={y, x}
+# b={z, c}
+# m=a.union(b)
+# print(m)
+# m=a.intersection(b)
+# print(m)
 
-# | para union
+#operadores logicos
+# | para union 
 # & para intersection
 
 #ejercicio 9
@@ -150,7 +151,7 @@ y permitir que el usuario consulte la calificación de uno de ellos.
 #     print(f"La calificación de {nombre} es: {calificaciones[nombre]}")
 # else:
 #     print("El estudiante no está en la lista.")
-
+#get (if, else)
 '''
 -creas un diccionario llamado calificaciones con tres estudiantes 
 y su respectivas notas.
@@ -165,24 +166,24 @@ se informa al usuario.
 Problema: Crear un diccionario con algunos productos 
 y permitir que el usuario agregue un nuevo producto con su precio.
 '''
-# productos = {
-#     "Manzana": 1.2,
-#     "Pan": 0.8,
-#     "Leche": 1.5
-# }
+productos = {
+    "Manzana": 1.2,
+    "Pan": 0.8,
+    "Leche": 1.5
+}
 
-# print("Productos actuales:")
-# for producto, precio in productos.items():
-#     print(f"{producto}: ${precio:.2f}")
+print("Productos actuales:")
+for producto, precio in productos.items():
+    print(f"{producto}: ${precio:.2f}")
 
-# nuevo_producto = input("Introduce el nombre del nuevo producto: ")
-# precio_producto = float(input("Introduce el precio del producto: "))
+nuevo_producto = input("Introduce el nombre del nuevo producto: ")
+precio_producto = float(input("Introduce el precio del producto: "))
 
-# productos[nuevo_producto] = precio_producto
+productos[nuevo_producto] = precio_producto
 
-# print("\nLista actualizada de productos:")
-# for producto, precio in productos.items():
-#     print(f"{producto}: ${precio:.2f}")
+print("\nLista actualizada de productos:")
+for producto, precio in productos.items():
+    print(f"{producto}: ${precio:.2f}")
 
 '''
 -se inicializa un diccionario llamado productos con algunos
