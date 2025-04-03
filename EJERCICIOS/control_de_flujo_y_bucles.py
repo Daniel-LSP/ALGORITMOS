@@ -5,19 +5,19 @@ entonces se realiza una operacion +de lo contrario, se realiza
 otra opcion (opcionalmente) 
 '''
 
-# x = 800
-# y = 200
-# if x > y: #condicion
-#     print("x es mayor que y") #operacion
+x = 800
+y = 200
+if x > y: #condicion
+    print("x es mayor que y") #operacion
 
-#uso del control if-else
+# uso del control if-else
 
-# w = 500
-# z = 200
-# if w > z: 
-#     print("w es mayor que z")
-# else:
-#     print("w es menor que z")
+w = 500
+z = 200
+if w > z: 
+    print("w es mayor que z")
+else:
+    print("w es menor que z")
 
 #uso del control if-elif-else
 
