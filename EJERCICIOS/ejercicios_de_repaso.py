@@ -25,6 +25,7 @@ Ejercicio 3: Buscar una Palabra en una Lista
 Problema:Crear una lista de palabras predefinida y pedir al usuario una palabra. Indicar si está en la lista o no.
 '''
 
+
 '''
 Ejercicio 4: Contar Números Pares en una Lista
 Problema:Solicitar 5 números al usuario, almacenarlos en una lista y contar cuántos son pares.
